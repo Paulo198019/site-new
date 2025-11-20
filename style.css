@@ -1,34 +1,118 @@
-.hero {
-  background: linear-gradient(135deg, #004080, #0066cc); /* Azul moderno e executivo */
-  color: #fff;
-  padding: 60px 20px;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hero-text h1 {
+body {
+  font-family: 'Segoe UI', sans-serif;
   color: #fff;
-  font-size: 2.8rem;
-  margin-bottom: 15px;
 }
 
-.hero-text p {
-  font-size: 1.2rem;
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen */
+  background: url('escritorio-moderno.jpg') no-repeat center center/cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 32, 64, 0.85); /* Azul escuro transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1920px;
+}
+
+.banner-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
-  color: border-radius: 6px;  color: #e6f0ff; /* Azul claro para contraste */
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.hero-buttons button:hover {
-  background: #e6f0ff;
-  color: #0066cc;
-}
+.btn-primary:hover {
+  background-color: #004080;
 }
 
-.hero-buttons button {
+.btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
   padding: 14px 28px;
-  margin-right: 10px;
-  background: #fff;
-  color: #004080;
-  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
