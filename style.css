@@ -1,0 +1,10 @@
+/* CSS completo conforme enviado anteriormente */
+body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+.banner { background-color: rgba(10,30,60,0.9); color:#fff; padding:40px 20px; }
+.banner-content { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; flex-wrap:wrap; }
+.banner-text h1 { font-size:2.8rem; margin-bottom:10px; }
+.banner-text h2 { font-size:1.8rem; margin-bottom:15px; }
+.banner-buttons .btn { background:#1e90ff; color:#fff; padding:12px 24px; margin-right:10px; text-decoration:none; border-radius:5px; font-weight:bold; }
+.banner-buttons .btn:hover { background:#4682b4; }
+.banner-image img { max-width:400px; border-radius:8px; }
+/* ... restante do CSS conforme enviado anteriormente ... */
