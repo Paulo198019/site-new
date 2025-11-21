@@ -1,1 +1,3 @@
-document.addEventListener('DOMContentLoaded',()=>{console.log('Site carregado com sucesso!');});
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Site carregado com sucesso!');
+});
